@@ -3,7 +3,7 @@
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-require_once '../vendor/autoload.php';
+require_once 'vendor/autoload.php';
 require_once 'library/Mobile-Detect-2.8.22/Mobile_Detect.php';
 $app = new Silex\Application();
 $app['debug'] = true;
@@ -18,8 +18,10 @@ $app['lt'] = require_once('helper/luitor.php');
 // 	$raiz.= "../";
 // }
 //Raiz
-$ip = "http://127.0.0.1:1800";
-$root = $ip."/practicas/estructura_nodejsphp/";
+// $ip = "http://127.0.0.1:1800";
+// $ip = "https://saludomundo.herokuapp.com/";
+// $root = $ip."practicas/estructura_nodejsphp/";
+$root = "https://saludomundo.herokuapp.com/";
 $app['root'] = $root;
 
 //Active Session
